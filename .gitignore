@@ -1,0 +1,6 @@
+# ~/.gitignore_global
+codeQL_db/
+codeQLDB2/
+misc_downlaods/
+ragRefactor/sampleData
+ragRefactor/synthetic_data_generator
