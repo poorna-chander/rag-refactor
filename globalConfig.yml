@@ -1,0 +1,7 @@
+codeql:
+  db_directory: /home/poorna/capstone/rag-refactor/ragRefactor/sample_dbs/code_ql/
+  repo_directory: /home/poorna/capstone/rag-refactor/ragRefactor/sample_dbs/code_ql/
+  sample_db:
+    pet_clinic: spring-petclinic-db
+  sample_codebase:
+    pet_clinic: spring-petclinic

@@ -1,6 +1,12 @@
 # ~/.gitignore_global
-codeQL_db/
-codeQLDB2/
-misc_downlaods/
-ragRefactor/sampleData
-ragRefactor/synthetic_data_generator
+.vscode/
+.idea/
+**/__pycache__/
+.ipynb_checkpoints/
+ragRefactor/sample_dbs/code_ql/spring-petclinic/
+ragRefactor/sample_dbs/code_ql/spring-petclinic-db/
+
+
+docs/call_calee_query.txt
+docs/codeql_saving_commands.txt
+ragRefactor/retriever/code_query/codeql-custom-queries-java/example2.ql
