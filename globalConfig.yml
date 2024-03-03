@@ -5,3 +5,5 @@ codeql:
     pet_clinic: spring-petclinic-db
   sample_codebase:
     pet_clinic: spring-petclinic
+  currect_db: spring-petclinic-db
+  queries_path: /home/poorna/capstone/rag-refactor/ragRefactor/dataService/code_ql/queries/

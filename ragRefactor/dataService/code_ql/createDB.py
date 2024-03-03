@@ -1,7 +1,7 @@
 import subprocess
 import os
 
-print("Current working directory:", os.getcwd())
+# print("Current working directory:", os.getcwd())
 import ragRefactor.commonUtils as common
 
 def createCodeQLDB():
