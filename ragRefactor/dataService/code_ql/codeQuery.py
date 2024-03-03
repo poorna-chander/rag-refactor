@@ -3,15 +3,18 @@ import os
 import pandas as pd
 import ragRefactor.commonUtils as common
 
-
 def getCallerCalleeDetails():
     caller_callee_df = runQueryTable("caller_callee_details.ql")
-    caller_callee_df.columns = ["call","call_location","call_feat_type","call_encapsule","call_encapsule_location","call_encapsule_feat_type","call_encapsule_file_class","callee","callee_location","callee_file_class","callee_feat_type"]
+    caller_callee_df.columns = ["call","call_location","call_feat_type",
+                                "call_encapsule","call_encapsule_location","call_encapsule_feat_type",
+                                "call_encapsule_file_class","callee","callee_location",
+                                "callee_file_class","callee_feat_type"]
     return caller_callee_df
 
 def getPkgClassCallableDetails():
     pkg_class_mthd_df = runQueryTable("pkg_class_method.ql")
-    pkg_class_mthd_df.columns = ["package","cllable_file_class","callable","param_types","return_type","callable_location"]
+    pkg_class_mthd_df.columns = ["package","cllable_file_class","callable",
+                                 "param_types","return_type","callable_location"]
     return pkg_class_mthd_df
 
 def runQueryTable(queryFile):
@@ -31,6 +34,9 @@ def parseStandardOutputTable(outputString):
     return caller_callee_df
     
 if __name__=="__main__":
+    files_save_path = common.globalConfig["files_path"]
     caller_callee_df = getCallerCalleeDetails()
+    caller_callee_df.to_csv(os.path.join(files_save_path, "caller_callee_details.csv"), index=False)
     pkg_class_mthd_df = getPkgClassCallableDetails()
-    print(pkg_class_mthd_df)
+    pkg_class_mthd_df.to_csv(os.path.join(files_save_path, "pkg_class_mthd_details.csv"), index=False)
+    print("codeQuery unit testing complete!")
