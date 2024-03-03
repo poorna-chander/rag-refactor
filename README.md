@@ -12,7 +12,7 @@ Applying my learnings on:
 - LangChain (Pipeline for Userinput --> prompt improvement --> RAG --> LLM Integration --> Validation)
 - Application of LLMs to Knowlwdge Intensive and Domain Specific Tasks
 
-![alt text](docs/image.png)
+![alt text](docs/highlevel_architecture.png)
 
 Key Steps and framework components:
 
