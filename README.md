@@ -1,4 +1,4 @@
-# rag-refactor - Interactive code refactoring using RAG (Retrieval Augmented Generation)
+# rag-refactor - Interactive AI guided code refactoring using RAG (Retrieval Augmented Generation)
 
 Automating move method refactoring through Retrieval Augmented Generation (RAG), leveraging codebase call graphs for indexing, and searching pertinent code chunks.
 Augmentation of prompts with codeflow and details converted to natural language to improve LLM recall and context faithfulness.
